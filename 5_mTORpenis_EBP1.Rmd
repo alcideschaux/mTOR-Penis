@@ -1,0 +1,299 @@
+## mTOR in Penile Cancer: phos-4EBP1 expression
+Last update: ```r {date()}```
+
+```{r global_options}
+library(knitr)
+opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, results = "asis")
+```
+
+```{r 4EBP1_DataSet}
+# Loading the working dataset
+Data <- read.csv("PenisDataset.csv")
+attach(Data)
+
+# Loading scripts and libraries
+source("RFUN/NicePlots.R")
+source("RFUN/NiceTables.R")
+```
+
+### Description
+In this section we evaluate the usefulness of `phos-4EBP1 expression` for predicting outcome, including tumor recurrence, tumor progression, distant metastasis, overall mortality, and cancer-related mortality. The analyses include association tests (Fisher's exact test), survival analysis (Kaplan-Meier method and log-rank test), unconditional binary logistic regression (for estimating odds ratios), and Cox's proportional hazards regression (for estimating hazard ratios). 
+
+__Methodology:__ Immunohistochemical expression was categorized in 2 levels (low and high) using the `upper tertile` as the cutoff point.
+
+```{r 4EBP1_Levels}
+marker.cut <- quantile(EBP1, probs = 0.66, na.rm = TRUE)
+marker <- ifelse(EBP1 > marker.cut, c("High phos-4EBP1"), c("Low phos-4EBP1"))
+marker <- as.factor(marker)
+```
+***
+
+#### Immunohistochemical expression by H-scores
+
+```{r 4EBP1_DescriptiveH}
+var <- EBP1
+t <- "H-score"
+plot.numerical(var, label = t)
+descriptive.numerical(var)
+```
+
+_Number of missing cases:_ `r sum(is.na(var))` cases.
+
+***
+
+#### Immunohistochemical expression by levels
+
+```{r 4EBP1_DescriptiveLevels}
+var <- marker
+t <- "Expression Levels"
+plot.categorical(var, align = "v", xlab = t)
+descriptive.categorical(var)
+```
+
+_Number of missing cases:_ `r sum(is.na(var))` cases.
+
+***
+
+### Association of Immunohistochemical Expression with Outcome
+In this subsection we evaluate the association of levels of immunohistochemical expression with outcome (including tumor recurrence, tumor progression, distant metastasis, overall mortality, and cancer-related mortality) using the Fisher's exact test.
+
+***
+
+#### Tumor recurrence
+```{r 4EBP1_AssociationRecurrence}
+outcome <- recurrence
+t <- "Tumor Recurrence"
+plot.categorical.group(marker, outcome, align = "v", xlab = t)
+descriptive.categorical.group(marker, outcome)
+
+```
+
+***
+
+#### Tumor progression
+```{r 4EBP1_AssociationProgression}
+outcome <- progression
+t <- "Tumor Progression"
+plot.categorical.group(marker, outcome, align = "v", xlab = t)
+descriptive.categorical.group(marker, outcome)
+
+```
+
+***
+
+#### Distant metastasis
+```{r 4EBP1_AssociationDistantMetastasis}
+outcome <- mets
+t <- "Distant Metastasis"
+plot.categorical.group(marker, outcome, align = "v", xlab = t)
+descriptive.categorical.group(marker, outcome)
+
+```
+
+***
+
+#### Overall mortality
+```{r 4EBP1_AssociationOverallMortality}
+outcome <- dead
+t <- "Overall Mortality"
+plot.categorical.group(marker, outcome, align = "v", xlab = t)
+descriptive.categorical.group(marker, outcome)
+
+```
+
+***
+
+#### Cancer-related mortality
+```{r 4EBP1_AssociationCancerMortality}
+outcome <- died.disease
+t <- "Cancer-Related Mortality"
+plot.categorical.group(marker, outcome, align = "v", xlab = t)
+descriptive.categorical.group(marker, outcome)
+
+```
+
+***
+
+### Survival Analysis by Immunohistochemical Expression
+In this subsection we plot survival curves for levels of immunohistochemical expression by outcome (including tumor recurrence, tumor progression, distant metastasis, overall mortality, and cancer-related mortality) using the Kaplan-Meier method. Survival curves were compared using the log-rank (Mantel-Cox) test.
+
+***
+
+```{r 4EBP1_SurvivalRecurrence, fig.width = 10, fig.height = 7}
+# Tumor recurrence
+outcome <- recurrence
+fu <- date.recurrence.mo
+t <- "Tumor Recurrence"
+survival.plot(marker, fu, outcome, title = t, ylim = c(-0.05, 1))
+```
+
+***
+
+```{r 4EBP1_SurvivalProgression, fig.width = 10, fig.height = 7}
+# Tumor progression
+outcome <- progression
+fu <- date.progression.mo
+t <- "Tumor Progression"
+survival.plot(marker, fu, outcome, title = t)
+
+```
+
+***
+
+```{r 4EBP1_SurvivalDistantMetastasis, fig.width = 10, fig.height = 7}
+# Distant metastasis
+outcome <- mets
+fu <- date.met.mo
+t <- "Distant Metastasis"
+survival.plot(marker, fu, outcome, title = t)
+
+```
+
+***
+
+```{r 4EBP1_SurvivalOverallMortality, fig.width = 10, fig.height = 7}
+# Overall mortality
+outcome <- dead
+fu <- fu.last.mo
+t <- "Overall Mortality"
+survival.plot(marker, fu, outcome, title = t)
+
+```
+
+***
+
+```{r 4EBP1_SurvivalCancerMortality, fig.width = 10, fig.height = 7}
+# Cancer-related mortality
+outcome <- died.disease
+fu <- fu.last.mo
+t <- "Cancer-Related Mortality"
+survival.plot(marker, fu, outcome, title = t)
+
+```
+
+***
+
+### Unconditional Binary Logistic Regression
+In this subsection we evaluate the usefulness of clinicopathologic features and immunohistochemical expression in predicting outcome (including tumor recurrence, tumor progression, distant metastasis, overall mortality, and cancer-related mortality) using unconditional binary logistic regression models. For each model we report the odds ratio (OR) with its 95% confidence intervals (lower and upper limits), raw P values, and P values adjusted using Hommel's correction.
+
+```{r 4EBP1_VariablesOR}
+# Recoding new variables for regression models
+older <- ifelse(age > median(age), c("Older"), c("Younger"))
+caucasian <- ifelse(race == "Caucasian", c("Yes"), c("No"))
+glans <- ifelse(site == "Glans", c("Yes"), c("No"))
+lp <- ifelse(site == "Lamina Propria", c("Yes"), c("No"))
+highgrade <- ifelse(grade == "Grade 3", c("Yes"), c("No"))
+deep <- ifelse(thick == "More than 10 mm", c("Yes"), c("No"))
+highpt <- ifelse(as.numeric(tnm.tumor) > 2, c("Yes"), c("No"))
+highpn <- ifelse(as.numeric(tnm.nodes) > 1, c("Yes"), c("No"))
+highstage <- ifelse(as.numeric(stage) > 2, c("Yes"), c("No"))
+# Creating a list of predictors for regression models
+predictors <- list("Patient's age > median" = older,
+                   "Caucasian race" = caucasian,
+                   "Glans location" = glans,
+                   "Invasion limited to lamina propria" = site,
+                   "High grade tumor (grade 3)" = highgrade,
+                   "Deep invasive tumor (> 10 mm)" = deep,
+                   "Invasion of penile urethra" = urethra,
+                   "Lymphovascular invasion" = lvi,
+                   "Perineural invasion" = pni,
+                   "HPV infection" = hpv.pos,
+                   "High pT stage (> pT1)" = highpt,
+                   "High pN stage (> pN0)" = highpn,
+                   "High clinical stage (> Stage II)" = highstage,
+                   "Prophylactic inguinal lymph node dissection" = dissection.type,
+                   "Metastatic inguinal lymph nodes" = nodes,
+                   "High phos-4EBP1 levels" = marker
+                   )
+# Creating the variable labels for regression tables
+varlabels <- names(predictors)
+# Creating the variable of follow-up time for regression tables
+fu <- fu.last.mo
+```
+
+***
+
+#### Tumor recurrence
+```{r 4EBP1_RecurrenceOR}
+outcome <- recurrence
+logistic.table(outcome, predictors, varlabels)
+```
+
+***
+
+#### Tumor progression
+```{r 4EBP1_ProgressionOR}
+outcome <- progression
+logistic.table(outcome, predictors, varlabels)
+```
+
+***
+
+#### Distant metastasis
+```{r 4EBP1_DistantMetastasisOR}
+outcome <- mets
+logistic.table(outcome, predictors, varlabels)
+```
+
+***
+
+#### Overall mortality
+```{r 4EBP1_OverallMortalityOR}
+outcome <- dead
+logistic.table(outcome, predictors, varlabels)
+```
+
+***
+
+#### Cancer-related mortality
+```{r 4EBP1_CancerMortalityOR}
+outcome <- died.disease
+logistic.table(outcome, predictors, varlabels)
+```
+
+***
+
+### Cox's Proportional Hazards Regression
+In this subsection we evaluate the usefulness of clinicopathologic features and immunohistochemical expression in predicting outcome (including tumor recurrence, tumor progression, distant metastasis, overall mortality, and cancer-related mortality) using unadjusted Cox's proportional hazard regression models. For each model we report the hazard ratio (HR) with its 95% confidence intervals (lower and upper limits), raw P values, and P values adjusted using Hommel's correction.
+
+***
+
+#### Tumor recurrence
+```{r 4EBP1_RecurrenceHR}
+outcome <- recurrence
+cox.table(outcome, fu, predictors, varlabels)
+```
+
+***
+
+#### Tumor progression
+```{r 4EBP1_ProgressionHR}
+outcome <- progression
+cox.table(outcome, fu, predictors, varlabels)
+```
+
+***
+
+#### Distant metastasis
+```{r 4EBP1_DistantMetastasisHR}
+outcome <- mets
+cox.table(outcome, fu, predictors, varlabels)
+```
+
+***
+
+#### Overall mortality
+```{r 4EBP1_OverallMortalityHR}
+outcome <- dead
+cox.table(outcome, fu, predictors, varlabels)
+```
+
+***
+
+#### Cancer-related mortality
+```{r 4EBP1_CancerMortalityHR}
+outcome <- died.disease
+cox.table(outcome, fu, predictors, varlabels)
+```
+
+***

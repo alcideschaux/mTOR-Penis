@@ -1,0 +1,334 @@
+## mTOR in Penile Cancer
+Last update: ```r {date()}```
+
+```{r global_options}
+library(knitr)
+opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, results = "asis")
+```
+
+```{r DataSet}
+# Loading the working dataset
+Data <- read.csv("PenisDataset.csv")
+attach(Data)
+
+# Loading scripts and libraries
+source("RFUN/NicePlots.R")
+source("RFUN/NiceTables.R")
+```
+
+### Descriptive Analysis
+In this section we describe the clinicopathologic and outcome features of the dataset. Numerical variables were described using histograms and boxplots. Categorical variables were described using bar plots.
+
+***
+
+#### Patient's age
+```{r DescriptiveAge}
+var <- age
+t <- "Patient's age, years"
+plot.numerical(var, label = t)
+descriptive.numerical(var)
+```
+
+_Number of missing cases:_ `r sum(is.na(var))` cases.
+
+***
+
+#### Patient's race
+```{r DescriptiveRace}
+var <- race
+t <- "Patient's race"
+plot.categorical(var, align = "v", xlab = t)
+descriptive.categorical(var)
+```
+
+_Number of missing cases:_ `r sum(is.na(var))` cases.
+
+***
+
+#### Histologic subtype
+```{r DescriptiveSubtype}
+var <- subtype
+t <- "Histologic Subtype"
+plot.categorical(var, align = "h", left = 5)
+descriptive.categorical(var)
+```
+
+_Number of missing cases:_ `r sum(is.na(var))` cases.
+
+***
+
+#### Anatomical site
+```{r DescriptiveSite}
+var <- site
+t <- "Anatomical Site"
+plot.categorical(var, align = "v", xlab = t)
+descriptive.categorical(var)
+```
+
+_Number of missing cases:_ `r sum(is.na(var))` cases.
+
+***
+
+#### Histologic grade
+```{r DescriptiveGrade}
+var <- grade
+t <- "Histologic Grade"
+plot.categorical(var, align = "v", xlab = t)
+descriptive.categorical(var)
+```
+
+_Number of missing cases:_ `r sum(is.na(var))` cases.
+
+***
+
+#### Tumor thickness
+```{r DescriptiveThick}
+thick <- factor(thick, levels = c("Less than 5 mm", "5-10 mm", "More than 10 mm"))
+var <- thick
+t <- "Tumor Thickness"
+plot.categorical(var, align = "v", xlab = t)
+descriptive.categorical(var)
+```
+
+_Number of missing cases:_ `r sum(is.na(var))` cases.
+
+***
+
+#### Lymphovascular invasion
+```{r DescriptiveLVI}
+var <- lvi
+t <- "Lymphovascular Invasion"
+plot.categorical(var, align = "v", xlab = t)
+descriptive.categorical(var)
+```
+
+_Number of missing cases:_ `r sum(is.na(var))` cases.
+
+***
+
+#### Perineural invasion
+```{r DescriptivePNI}
+var <- pni
+t <- "Perineural Invasion"
+plot.categorical(var, align = "v", xlab = t)
+descriptive.categorical(var)
+```
+
+_Number of missing cases:_ `r sum(is.na(var))` cases.
+
+***
+
+#### Anatomical level
+```{r DescriptiveLevel}
+var <- level
+t <- "Anatomical Level"
+plot.categorical(var, align = "h", left = 7)
+descriptive.categorical(var)
+```
+
+_Number of missing cases:_ `r sum(is.na(var))` cases.
+
+***
+
+#### Invasion of penile urethra
+```{r DescriptiveUrethra}
+var <- urethra
+t <- "Invasion of Penile Urethra"
+plot.categorical(var, align = "v", xlab = t)
+descriptive.categorical(var)
+```
+
+_Number of missing cases:_ `r sum(is.na(var))` cases.
+
+***
+
+#### Inguinal lymph node metastasis
+```{r DescriptiveNodes}
+var <- nodes
+t <- "Inguinal LN metastasis"
+plot.categorical(var, align = "v", xlab = t)
+descriptive.categorical(var)
+```
+
+_Number of missing cases:_ `r sum(is.na(var))` cases.
+
+***
+
+#### Date of lymph node dissection
+```{r DescriptiveDateLN}
+var <- date.lymph.mo
+t <- "Months to LN dissection"
+plot.numerical(var, label = t)
+descriptive.numerical(var)
+```
+
+_Number of missing cases:_ `r sum(is.na(var))` cases.
+
+#### Type of inguinal dissection
+```{r DescriptiveDissection}
+var <- dissection.type
+t <- "Type of Inguinal Dissection"
+plot.categorical(var, align = "v", xlab = t)
+descriptive.categorical(var)
+```
+
+_Number of missing cases:_ `r sum(is.na(var))` cases.
+
+***
+
+#### pT Stage
+```{r DescriptiveT}
+tnm.tumor <- factor(tnm.tumor, levels = c("Ta", "T1a", "T1b", "T2", "T3", "T4"))
+var <- tnm.tumor
+t <- "pT Stage"
+plot.categorical(var, align = "v", xlab = t)
+descriptive.categorical(var)
+```
+
+_Number of missing cases:_ `r sum(is.na(var))` cases.
+
+***
+
+#### pN Stage
+```{r DescriptiveN}
+var <- tnm.nodes
+t <- "pN Stage"
+plot.categorical(var, align = "v", xlab = t)
+descriptive.categorical(var)
+```
+
+_Number of missing cases:_ `r sum(is.na(var))` cases.
+
+***
+
+#### Clinical stage
+```{r DescriptiveStage}
+var <- stage
+t <- "Clinical Stage"
+plot.categorical(var, align = "v", xlab = t)
+descriptive.categorical(var)
+```
+
+_Number of missing cases:_ `r sum(is.na(var))` cases.
+
+***
+
+#### Primary treatment
+```{r DescriptiveTreatment}
+var <- treatment
+t <- "Primary Treatment"
+plot.categorical(var, align = "h", left = 10)
+descriptive.categorical(var)
+```
+
+_Number of missing cases:_ `r sum(is.na(var))` cases.
+
+***
+
+#### Adjuvant chemotherapy
+```{r DescriptiveChemo}
+var <- chemo
+t <- "Adjuvant Chemotherapy"
+plot.categorical(var, align = "v", xlab = t)
+descriptive.categorical(var)
+```
+
+_Number of missing cases:_ `r sum(is.na(var))` cases.
+
+***
+
+#### Adjuvant radiotherapy
+```{r DescriptiveRadio}
+var <- radio
+t <- "Adjuvant Radiotherapy"
+plot.categorical(var, align = "v", xlab = t)
+descriptive.categorical(var)
+```
+
+_Number of missing cases:_ `r sum(is.na(var))` cases.
+
+***
+
+#### Tumor recurrence
+```{r DescriptiveRecurrence}
+var <- recurrence
+t <- "Tumor Recurrence"
+plot.categorical(var, align = "v", xlab = t)
+descriptive.categorical(var)
+```
+
+_Number of missing cases:_ `r sum(is.na(var))` cases.
+
+***
+
+#### Time to tumor recurrence
+```{r DescriptiveRecurrenceTime}
+var <- date.recurrence.mo
+t <- "Months to Tumor Recurrence"
+plot.numerical(var, label = t)
+descriptive.numerical(var)
+```
+
+_Number of missing cases:_ `r sum(is.na(var))` cases.
+
+***
+
+#### Tumor progression
+```{r DescriptiveProgression}
+var <- progression
+t <- "Tumor Progression"
+plot.categorical(var, align = "v", xlab = t)
+descriptive.categorical(var)
+```
+
+_Number of missing cases:_ `r sum(is.na(var))` cases.
+
+***
+
+#### Time to tumor recurrence
+```{r DescriptiveProgressionTime}
+var <- date.progression.mo
+t <- "Months to Tumor Progression"
+plot.numerical(var, label = t)
+descriptive.numerical(var)
+```
+
+_Number of missing cases:_ `r sum(is.na(var))` cases.
+
+***
+
+#### Follow-Up
+```{r DescriptiveFU}
+var <- fu.last.mo
+t <- "Follow-Up (Months)"
+plot.numerical(var, label = t)
+descriptive.numerical(var)
+```
+
+_Number of missing cases:_ `r sum(is.na(var))` cases.
+
+***
+
+#### Outcome
+```{r DescriptiveOutcome}
+var <- outcome
+t <- "Patient's Outcome"
+plot.categorical(var, align = "h", left = 9)  
+descriptive.categorical(var)
+```
+
+_Number of missing cases:_ `r sum(is.na(var))` cases.
+
+***
+
+#### Overall mortality
+```{r DescriptiveDead}
+var <- dead
+t <- "Overall Mortality"
+plot.categorical(var, align = "v", xlab = t)
+descriptive.categorical(var)
+```
+
+_Number of missing cases:_ `r sum(is.na(var))` cases.
+
+***
