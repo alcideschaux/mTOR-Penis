@@ -1,5 +1,5 @@
 ## mTOR in Penile Cancer
-Last update: ``Thu Dec 18 14:26:25 2014``
+Last update: ``Wed Feb  4 14:54:18 2015``
 
 
 ```r
@@ -15,7 +15,7 @@ In this section we describe the clinicopathologic and outcome features of the da
 ***
 
 #### Patient's age
-![plot of chunk DescriptiveAge](figure/DescriptiveAge1.png) ![plot of chunk DescriptiveAge](figure/DescriptiveAge2.png) 
+![plot of chunk DescriptiveAge](figure/DescriptiveAge-1.png) ![plot of chunk DescriptiveAge](figure/DescriptiveAge-2.png) 
 
 |Statistics          | Values |
 |:-------------------|:------:|
@@ -31,7 +31,7 @@ _Number of missing cases:_ 0 cases.
 ***
 
 #### Patient's race
-![plot of chunk DescriptiveRace](figure/DescriptiveRace.png) 
+![plot of chunk DescriptiveRace](figure/DescriptiveRace-1.png) 
 
 |                 | No. Cases |  %   |
 |:----------------|:---------:|:----:|
@@ -44,7 +44,7 @@ _Number of missing cases:_ 0 cases.
 ***
 
 #### Histologic subtype
-![plot of chunk DescriptiveSubtype](figure/DescriptiveSubtype.png) 
+![plot of chunk DescriptiveSubtype](figure/DescriptiveSubtype-1.png) 
 
 |          | No. Cases |  %   |
 |:---------|:---------:|:----:|
@@ -61,7 +61,7 @@ _Number of missing cases:_ 0 cases.
 ***
 
 #### Anatomical site
-![plot of chunk DescriptiveSite](figure/DescriptiveSite.png) 
+![plot of chunk DescriptiveSite](figure/DescriptiveSite-1.png) 
 
 |               | No. Cases |  %   |
 |:--------------|:---------:|:----:|
@@ -75,7 +75,7 @@ _Number of missing cases:_ 0 cases.
 ***
 
 #### Histologic grade
-![plot of chunk DescriptiveGrade](figure/DescriptiveGrade.png) 
+![plot of chunk DescriptiveGrade](figure/DescriptiveGrade-1.png) 
 
 |        | No. Cases | %  |
 |:-------|:---------:|:--:|
@@ -88,7 +88,7 @@ _Number of missing cases:_ 0 cases.
 ***
 
 #### Tumor thickness
-![plot of chunk DescriptiveThick](figure/DescriptiveThick.png) 
+![plot of chunk DescriptiveThick](figure/DescriptiveThick-1.png) 
 
 |                | No. Cases | %  |
 |:---------------|:---------:|:--:|
@@ -101,7 +101,7 @@ _Number of missing cases:_ 0 cases.
 ***
 
 #### Lymphovascular invasion
-![plot of chunk DescriptiveLVI](figure/DescriptiveLVI.png) 
+![plot of chunk DescriptiveLVI](figure/DescriptiveLVI-1.png) 
 
 |    | No. Cases | %  |
 |:---|:---------:|:--:|
@@ -113,7 +113,7 @@ _Number of missing cases:_ 0 cases.
 ***
 
 #### Perineural invasion
-![plot of chunk DescriptivePNI](figure/DescriptivePNI.png) 
+![plot of chunk DescriptivePNI](figure/DescriptivePNI-1.png) 
 
 |    | No. Cases | %  |
 |:---|:---------:|:--:|
@@ -125,7 +125,7 @@ _Number of missing cases:_ 0 cases.
 ***
 
 #### Anatomical level
-![plot of chunk DescriptiveLevel](figure/DescriptiveLevel.png) 
+![plot of chunk DescriptiveLevel](figure/DescriptiveLevel-1.png) 
 
 |               | No. Cases |  %   |
 |:--------------|:---------:|:----:|
@@ -140,7 +140,7 @@ _Number of missing cases:_ 1 cases.
 ***
 
 #### Invasion of penile urethra
-![plot of chunk DescriptiveUrethra](figure/DescriptiveUrethra.png) 
+![plot of chunk DescriptiveUrethra](figure/DescriptiveUrethra-1.png) 
 
 |    | No. Cases | %  |
 |:---|:---------:|:--:|
@@ -152,7 +152,7 @@ _Number of missing cases:_ 0 cases.
 ***
 
 #### Inguinal lymph node metastasis
-![plot of chunk DescriptiveNodes](figure/DescriptiveNodes.png) 
+![plot of chunk DescriptiveNodes](figure/DescriptiveNodes-1.png) 
 
 |         | No. Cases | %  |
 |:--------|:---------:|:--:|
@@ -164,7 +164,7 @@ _Number of missing cases:_ 24 cases.
 ***
 
 #### Date of lymph node dissection
-![plot of chunk DescriptiveDateLN](figure/DescriptiveDateLN1.png) ![plot of chunk DescriptiveDateLN](figure/DescriptiveDateLN2.png) 
+![plot of chunk DescriptiveDateLN](figure/DescriptiveDateLN-1.png) ![plot of chunk DescriptiveDateLN](figure/DescriptiveDateLN-2.png) 
 
 |Statistics          | Values |
 |:-------------------|:------:|
@@ -178,7 +178,7 @@ _Number of missing cases:_ 24 cases.
 _Number of missing cases:_ 31 cases.
 
 #### Type of inguinal dissection
-![plot of chunk DescriptiveDissection](figure/DescriptiveDissection.png) 
+![plot of chunk DescriptiveDissection](figure/DescriptiveDissection-1.png) 
 
 |              | No. Cases | %  |
 |:-------------|:---------:|:--:|
@@ -190,7 +190,7 @@ _Number of missing cases:_ 31 cases.
 ***
 
 #### pT Stage
-![plot of chunk DescriptiveT](figure/DescriptiveT.png) 
+![plot of chunk DescriptiveT](figure/DescriptiveT-1.png) 
 
 |    | No. Cases |  %   |
 |:---|:---------:|:----:|
@@ -206,7 +206,7 @@ _Number of missing cases:_ 0 cases.
 ***
 
 #### pN Stage
-![plot of chunk DescriptiveN](figure/DescriptiveN.png) 
+![plot of chunk DescriptiveN](figure/DescriptiveN-1.png) 
 
 |    | No. Cases | %  |
 |:---|:---------:|:--:|
@@ -220,7 +220,7 @@ _Number of missing cases:_ 24 cases.
 ***
 
 #### Clinical stage
-![plot of chunk DescriptiveStage](figure/DescriptiveStage.png) 
+![plot of chunk DescriptiveStage](figure/DescriptiveStage-1.png) 
 
 |           | No. Cases |  %   |
 |:----------|:---------:|:----:|
@@ -236,7 +236,7 @@ _Number of missing cases:_ 0 cases.
 ***
 
 #### Primary treatment
-![plot of chunk DescriptiveTreatment](figure/DescriptiveTreatment.png) 
+![plot of chunk DescriptiveTreatment](figure/DescriptiveTreatment-1.png) 
 
 |                    | No. Cases |  %   |
 |:-------------------|:---------:|:----:|
@@ -250,7 +250,7 @@ _Number of missing cases:_ 0 cases.
 ***
 
 #### Adjuvant chemotherapy
-![plot of chunk DescriptiveChemo](figure/DescriptiveChemo.png) 
+![plot of chunk DescriptiveChemo](figure/DescriptiveChemo-1.png) 
 
 |    | No. Cases | %  |
 |:---|:---------:|:--:|
@@ -262,7 +262,7 @@ _Number of missing cases:_ 7 cases.
 ***
 
 #### Adjuvant radiotherapy
-![plot of chunk DescriptiveRadio](figure/DescriptiveRadio.png) 
+![plot of chunk DescriptiveRadio](figure/DescriptiveRadio-1.png) 
 
 |    | No. Cases | %  |
 |:---|:---------:|:--:|
@@ -274,7 +274,7 @@ _Number of missing cases:_ 4 cases.
 ***
 
 #### Tumor recurrence
-![plot of chunk DescriptiveRecurrence](figure/DescriptiveRecurrence.png) 
+![plot of chunk DescriptiveRecurrence](figure/DescriptiveRecurrence-1.png) 
 
 |    | No. Cases |  %   |
 |:---|:---------:|:----:|
@@ -286,7 +286,7 @@ _Number of missing cases:_ 9 cases.
 ***
 
 #### Time to tumor recurrence
-![plot of chunk DescriptiveRecurrenceTime](figure/DescriptiveRecurrenceTime1.png) ![plot of chunk DescriptiveRecurrenceTime](figure/DescriptiveRecurrenceTime2.png) 
+![plot of chunk DescriptiveRecurrenceTime](figure/DescriptiveRecurrenceTime-1.png) ![plot of chunk DescriptiveRecurrenceTime](figure/DescriptiveRecurrenceTime-2.png) 
 
 |Statistics          | Values |
 |:-------------------|:------:|
@@ -302,7 +302,7 @@ _Number of missing cases:_ 49 cases.
 ***
 
 #### Tumor progression
-![plot of chunk DescriptiveProgression](figure/DescriptiveProgression.png) 
+![plot of chunk DescriptiveProgression](figure/DescriptiveProgression-1.png) 
 
 |    | No. Cases | %  |
 |:---|:---------:|:--:|
@@ -314,7 +314,7 @@ _Number of missing cases:_ 6 cases.
 ***
 
 #### Time to tumor recurrence
-![plot of chunk DescriptiveProgressionTime](figure/DescriptiveProgressionTime1.png) ![plot of chunk DescriptiveProgressionTime](figure/DescriptiveProgressionTime2.png) 
+![plot of chunk DescriptiveProgressionTime](figure/DescriptiveProgressionTime-1.png) ![plot of chunk DescriptiveProgressionTime](figure/DescriptiveProgressionTime-2.png) 
 
 |Statistics          | Values |
 |:-------------------|:------:|
@@ -330,7 +330,7 @@ _Number of missing cases:_ 39 cases.
 ***
 
 #### Follow-Up
-![plot of chunk DescriptiveFU](figure/DescriptiveFU1.png) ![plot of chunk DescriptiveFU](figure/DescriptiveFU2.png) 
+![plot of chunk DescriptiveFU](figure/DescriptiveFU-1.png) ![plot of chunk DescriptiveFU](figure/DescriptiveFU-2.png) 
 
 |Statistics          | Values |
 |:-------------------|:------:|
@@ -346,7 +346,7 @@ _Number of missing cases:_ 2 cases.
 ***
 
 #### Outcome
-![plot of chunk DescriptiveOutcome](figure/DescriptiveOutcome.png) 
+![plot of chunk DescriptiveOutcome](figure/DescriptiveOutcome-1.png) 
 
 |                      | No. Cases |  %   |
 |:---------------------|:---------:|:----:|
@@ -361,7 +361,7 @@ _Number of missing cases:_ 0 cases.
 ***
 
 #### Overall mortality
-![plot of chunk DescriptiveDead](figure/DescriptiveDead.png) 
+![plot of chunk DescriptiveDead](figure/DescriptiveDead-1.png) 
 
 |    | No. Cases | %  |
 |:---|:---------:|:--:|

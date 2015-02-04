@@ -24,7 +24,7 @@ __Methodology:__ Immunohistochemical expression was categorized in 2 levels (dec
 ```{r PTEN_Levels}
 marker.cut <- quantile(PTEN, probs = 0.33, na.rm = TRUE)
 marker <- ifelse(PTEN < marker.cut, c("Decreased/Loss PTEN"), c("Maintained PTEN"))
-marker <- as.factor(marker)
+marker <- factor(marker, levels = c("Maintained PTEN", "Decreased/Loss PTEN"))
 ```
 ***
 

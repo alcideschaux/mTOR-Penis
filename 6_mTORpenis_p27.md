@@ -1,5 +1,5 @@
 ## mTOR in Penile Cancer: p27 expression
-Last update: ``Thu Dec 18 14:36:28 2014``
+Last update: ``Wed Feb  4 14:39:00 2015``
 
 
 ```r
@@ -19,7 +19,7 @@ __Methodology:__ Immunohistochemical expression was categorized in 2 levels (low
 
 #### Immunohistochemical expression by H-scores
 
-![plot of chunk p27_DescriptiveH](figure/p27_DescriptiveH1.png) ![plot of chunk p27_DescriptiveH](figure/p27_DescriptiveH2.png) 
+![plot of chunk p27_DescriptiveH](figure/p27_DescriptiveH-1.png) ![plot of chunk p27_DescriptiveH](figure/p27_DescriptiveH-2.png) 
 
 |Statistics          | Values |
 |:-------------------|:------:|
@@ -36,12 +36,12 @@ _Number of missing cases:_ 1 cases.
 
 #### Immunohistochemical expression by levels
 
-![plot of chunk p27_DescriptiveLevels](figure/p27_DescriptiveLevels.png) 
+![plot of chunk p27_DescriptiveLevels](figure/p27_DescriptiveLevels-1.png) 
 
 |         | No. Cases | %  |
 |:--------|:---------:|:--:|
-|High p27 |    16     | 31 |
 |Low p27  |    36     | 69 |
+|High p27 |    16     | 31 |
 
 _Number of missing cases:_ 1 cases.
 
@@ -53,52 +53,52 @@ In this subsection we evaluate the association of levels of immunohistochemical 
 ***
 
 #### Tumor recurrence
-![plot of chunk p27_AssociationRecurrence](figure/p27_AssociationRecurrence.png) 
+![plot of chunk p27_AssociationRecurrence](figure/p27_AssociationRecurrence-1.png) 
 
-|         |  No  |  %   | Yes |  %   |
-|:--------|:----:|:----:|:---:|:----:|
-|High p27 | 12.0 | 30.8 | 1.0 | 25.0 |
-|Low p27  | 27.0 | 69.2 | 3.0 | 75.0 |
+|         | No |  %   | Yes | %  |
+|:--------|:--:|:----:|:---:|:--:|
+|Low p27  | 27 | 69.2 |  3  | 75 |
+|High p27 | 12 | 30.8 |  1  | 25 |
 
 ***
 
 #### Tumor progression
-![plot of chunk p27_AssociationProgression](figure/p27_AssociationProgression.png) 
+![plot of chunk p27_AssociationProgression](figure/p27_AssociationProgression-1.png) 
 
-|         |  No  |  %   | Yes  |  %   |
-|:--------|:----:|:----:|:----:|:----:|
-|High p27 | 9.0  | 32.1 | 5.0  | 27.8 |
-|Low p27  | 19.0 | 67.9 | 13.0 | 72.2 |
+|         | No |  %   | Yes |  %   |
+|:--------|:--:|:----:|:---:|:----:|
+|Low p27  | 19 | 67.9 | 13  | 72.2 |
+|High p27 | 9  | 32.1 |  5  | 27.8 |
 
 ***
 
 #### Distant metastasis
-![plot of chunk p27_AssociationDistantMetastasis](figure/p27_AssociationDistantMetastasis.png) 
+![plot of chunk p27_AssociationDistantMetastasis](figure/p27_AssociationDistantMetastasis-1.png) 
 
-|         |  No  |  %   | Yes  |  %   |
-|:--------|:----:|:----:|:----:|:----:|
-|High p27 | 8.0  | 32.0 | 6.0  | 31.6 |
-|Low p27  | 17.0 | 68.0 | 13.0 | 68.4 |
+|         | No | %  | Yes |  %   |
+|:--------|:--:|:--:|:---:|:----:|
+|Low p27  | 17 | 68 | 13  | 68.4 |
+|High p27 | 8  | 32 |  6  | 31.6 |
 
 ***
 
 #### Overall mortality
-![plot of chunk p27_AssociationOverallMortality](figure/p27_AssociationOverallMortality.png) 
+![plot of chunk p27_AssociationOverallMortality](figure/p27_AssociationOverallMortality-1.png) 
 
-|         |  No  |  %   | Yes  |  %   |
-|:--------|:----:|:----:|:----:|:----:|
-|High p27 | 9.0  | 33.3 | 7.0  | 30.4 |
-|Low p27  | 18.0 | 66.7 | 16.0 | 69.6 |
+|         | No |  %   | Yes |  %   |
+|:--------|:--:|:----:|:---:|:----:|
+|Low p27  | 18 | 66.7 | 16  | 69.6 |
+|High p27 | 9  | 33.3 |  7  | 30.4 |
 
 ***
 
 #### Cancer-related mortality
-![plot of chunk p27_AssociationCancerMortality](figure/p27_AssociationCancerMortality.png) 
+![plot of chunk p27_AssociationCancerMortality](figure/p27_AssociationCancerMortality-1.png) 
 
-|         |  No  |  %   | Yes |  %   |
-|:--------|:----:|:----:|:---:|:----:|
-|High p27 | 14.0 | 35.0 | 2.0 | 22.2 |
-|Low p27  | 26.0 | 65.0 | 7.0 | 77.8 |
+|         | No | %  | Yes |  %   |
+|:--------|:--:|:--:|:---:|:----:|
+|Low p27  | 26 | 65 |  7  | 77.8 |
+|High p27 | 14 | 35 |  2  | 22.2 |
 
 ***
 
@@ -107,48 +107,48 @@ In this subsection we plot survival curves for levels of immunohistochemical exp
 
 ***
 
-![plot of chunk p27_SurvivalRecurrence](figure/p27_SurvivalRecurrence.png) 
+![plot of chunk p27_SurvivalRecurrence](figure/p27_SurvivalRecurrence-1.png) 
 
 |         | No. Observations | No. Events | Median Survival |
 |:--------|:----------------:|:----------:|:---------------:|
-|High p27 |       1.0        |    1.0     |       1.0       |
-|Low p27  |       3.0        |    3.0     |      18.3       |
+|Low p27  |        3         |     3      |      18.3       |
+|High p27 |        1         |     1      |       1.0       |
 
 ***
 
-![plot of chunk p27_SurvivalProgression](figure/p27_SurvivalProgression.png) 
+![plot of chunk p27_SurvivalProgression](figure/p27_SurvivalProgression-1.png) 
 
 |         | No. Observations | No. Events | Median Survival |
 |:--------|:----------------:|:----------:|:---------------:|
-|High p27 |       5.0        |    5.0     |       6.2       |
-|Low p27  |       9.0        |    9.0     |       5.9       |
+|Low p27  |        9         |     9      |       5.9       |
+|High p27 |        5         |     5      |       6.2       |
 
 ***
 
-![plot of chunk p27_SurvivalDistantMetastasis](figure/p27_SurvivalDistantMetastasis.png) 
+![plot of chunk p27_SurvivalDistantMetastasis](figure/p27_SurvivalDistantMetastasis-1.png) 
 
 |         | No. Observations | No. Events | Median Survival |
 |:--------|:----------------:|:----------:|:---------------:|
-|High p27 |       3.00       |    3.00    |      11.70      |
-|Low p27  |       6.00       |    6.00    |      8.95       |
+|Low p27  |        6         |     6      |      8.95       |
+|High p27 |        3         |     3      |      11.70      |
 
 ***
 
-![plot of chunk p27_SurvivalOverallMortality](figure/p27_SurvivalOverallMortality.png) 
+![plot of chunk p27_SurvivalOverallMortality](figure/p27_SurvivalOverallMortality-1.png) 
 
 |         | No. Observations | No. Events | Median Survival |
 |:--------|:----------------:|:----------:|:---------------:|
-|High p27 |       16.0       |    7.0     |      56.6       |
-|Low p27  |       34.0       |    16.0    |      80.1       |
+|Low p27  |        34        |     16     |      80.1       |
+|High p27 |        16        |     7      |      56.6       |
 
 ***
 
-![plot of chunk p27_SurvivalCancerMortality](figure/p27_SurvivalCancerMortality.png) 
+![plot of chunk p27_SurvivalCancerMortality](figure/p27_SurvivalCancerMortality-1.png) 
 
 |         | No. Observations | No. Events | Median Survival |
 |:--------|:----------------:|:----------:|:---------------:|
-|High p27 |        16        |     2      |       NA        |
 |Low p27  |        33        |     7      |       NA        |
+|High p27 |        16        |     2      |       NA        |
 
 ***
 
@@ -178,7 +178,7 @@ In this subsection we evaluate the usefulness of clinicopathologic features and 
 |High clinical stage (> Stage II)            |  0.48   |    0.053     |     4.38      |     0.49    |       1.00       |
 |Prophylactic inguinal lymph node dissection | 1.2e+08 |     0.00     |      NA       |        1    |       1.00       |
 |Metastatic inguinal lymph nodes             |  0.75   |    0.027     |     20.72     |     0.85    |       1.00       |
-|High p27 levels                             |  1.33   |     0.15     |     28.49     |     0.81    |       1.00       |
+|High p27 levels                             |  0.75   |    0.035     |     6.57      |     0.81    |       1.00       |
 
 ***
 
@@ -196,12 +196,12 @@ In this subsection we evaluate the usefulness of clinicopathologic features and 
 |Lymphovascular invasion                     |  4.79   |     1.36     |     18.54     |    0.018    |      0.1620      |
 |Perineural invasion                         |  6.00   |     1.64     |     24.74     |   0.0087    |      0.0957      |
 |HPV infection                               |  1.79   |     0.37     |     8.66      |     0.46    |      0.9900      |
-|High pT stage (> pT1)                       |  18.21  |     3.10     |    350.21     |    0.008    |      0.0930      |
+|High pT stage (> pT1)                       |  7.47   |     1.71     |     52.86     |    0.016    |      0.1550      |
 |High pN stage (> pN0)                       |  7.00   |     1.31     |     47.55     |    0.031    |      0.2700      |
 |High clinical stage (> Stage II)            |  4e+08  |   1.5e-69    |      NA       |     0.99    |      0.9900      |
 |Prophylactic inguinal lymph node dissection |  0.83   |     0.13     |     5.30      |     0.84    |      0.9900      |
 |Metastatic inguinal lymph nodes             |  7.00   |     1.31     |     47.55     |    0.031    |      0.2700      |
-|High p27 levels                             |  1.23   |     0.34     |     4.79      |     0.75    |      0.9900      |
+|High p27 levels                             |  0.81   |     0.21     |     2.93      |     0.75    |      0.9900      |
 
 ***
 
@@ -214,17 +214,17 @@ In this subsection we evaluate the usefulness of clinicopathologic features and 
 |Glans location                              |  0.53   |     0.16     |     1.75      |      0.3    |      1.000       |
 |Invasion limited to lamina propria          | 1.2e-07 |      NA      |    2e+205     |     0.99    |      1.000       |
 |High grade tumor (grade 3)                  |  3.70   |     1.06     |     14.11     |    0.045    |      0.540       |
-|Deep invasive tumor (> 10 mm)               |  7.56   |     1.99     |     34.27     |   0.0047    |      0.066       |
+|Deep invasive tumor (> 10 mm)               |  7.56   |     1.99     |     34.27     |   0.0047    |      0.071       |
 |Invasion of penile urethra                  |  3.54   |     0.80     |     19.08     |     0.11    |      1.000       |
 |Lymphovascular invasion                     |  11.92  |     3.06     |     56.65     |   0.00074   |      0.012       |
 |Perineural invasion                         |  2.42   |     0.68     |     9.18      |     0.18    |      1.000       |
 |HPV infection                               |  2.74   |     0.58     |     15.08     |     0.21    |      1.000       |
-|High pT stage (> pT1)                       |  21.00  |     3.52     |    406.43     |   0.0057    |      0.080       |
+|High pT stage (> pT1)                       |  8.50   |     1.91     |     60.80     |    0.011    |      0.154       |
 |High pN stage (> pN0)                       | 3.8e+09 |   2.2e-147   |      NA       |        1    |      1.000       |
 |High clinical stage (> Stage II)            |  5e+08  |   9.9e-75    |      NA       |     0.99    |      1.000       |
 |Prophylactic inguinal lymph node dissection |  1.14   |     0.18     |     7.88      |     0.89    |      1.000       |
 |Metastatic inguinal lymph nodes             | 3.8e+09 |   2.2e-147   |      NA       |        1    |      1.000       |
-|High p27 levels                             |  1.02   |     0.28     |     3.79      |     0.98    |      1.000       |
+|High p27 levels                             |  0.98   |     0.26     |     3.54      |     0.98    |      1.000       |
 
 ***
 
@@ -247,7 +247,7 @@ In this subsection we evaluate the usefulness of clinicopathologic features and 
 |High clinical stage (> Stage II)            |  0.98   |     0.31     |     3.09      |     0.97    |       1.00       |
 |Prophylactic inguinal lymph node dissection |  0.80   |     0.13     |     4.58      |      0.8    |       1.00       |
 |Metastatic inguinal lymph nodes             |  0.64   |     0.14     |     2.93      |     0.57    |       1.00       |
-|High p27 levels                             |  1.14   |     0.35     |     3.88      |     0.83    |       1.00       |
+|High p27 levels                             |  0.88   |     0.26     |     2.89      |     0.83    |       1.00       |
 
 ***
 
@@ -265,12 +265,12 @@ In this subsection we evaluate the usefulness of clinicopathologic features and 
 |Lymphovascular invasion                     |  7.11   |     1.56     |     39.44     |    0.014    |       0.20       |
 |Perineural invasion                         |  5.45   |     1.22     |     29.60     |    0.032    |       0.42       |
 |HPV infection                               |  1.67   |     0.21     |     9.18      |     0.58    |       1.00       |
-|High pT stage (> pT1)                       |  6.91   |     1.12     |    134.24     |    0.081    |       0.81       |
+|High pT stage (> pT1)                       |  2.74   |     0.58     |     19.91     |     0.24    |       1.00       |
 |High pN stage (> pN0)                       |  2.86   |     0.55     |     17.52     |     0.22    |       1.00       |
 |High clinical stage (> Stage II)            | 1.3e+08 |   3.5e-81    |      NA       |     0.99    |       1.00       |
 |Prophylactic inguinal lymph node dissection |  1.00   |     0.14     |     7.16      |        1    |       1.00       |
 |Metastatic inguinal lymph nodes             |  2.86   |     0.55     |     17.52     |     0.22    |       1.00       |
-|High p27 levels                             |  1.88   |     0.39     |     13.81     |     0.47    |       1.00       |
+|High p27 levels                             |  0.53   |    0.072     |     2.56      |     0.47    |       1.00       |
 
 ***
 
@@ -293,12 +293,12 @@ In this subsection we evaluate the usefulness of clinicopathologic features and 
 |Lymphovascular invasion                     |  7.19   |     0.14     |     0.60      |     0.11    |       0.97       |
 |Perineural invasion                         |  3.78   |     0.26     |     0.31      |     0.34    |       0.97       |
 |HPV infection                               |  7.88   |     0.13     |     0.68      |    0.088    |       0.88       |
-|High pT stage (> pT1)                       |  4.48   |     0.22     |     0.32      |     0.25    |       0.97       |
+|High pT stage (> pT1)                       |  2.93   |     0.34     |     0.24      |     0.38    |       0.97       |
 |High pN stage (> pN0)                       |  1.21   |     0.83     |     0.073     |      0.9    |       0.97       |
 |High clinical stage (> Stage II)            |  4.48   |     0.22     |     0.32      |     0.25    |       0.97       |
 |Prophylactic inguinal lymph node dissection | 2.9e+09 |   3.5e-10    |     0.00      |     0.17    |       0.97       |
 |Metastatic inguinal lymph nodes             |  1.21   |     0.83     |     0.073     |      0.9    |       0.97       |
-|High p27 levels                             |  0.76   |     1.31     |     0.046     |     0.85    |       0.97       |
+|High p27 levels                             |  1.31   |     0.76     |     0.08      |     0.85    |       0.97       |
 
 ***
 
@@ -314,14 +314,14 @@ In this subsection we evaluate the usefulness of clinicopathologic features and 
 |Deep invasive tumor (> 10 mm)               |  11.92  |    0.084     |     4.00      |   2.5e-06   |     3.8e-05      |
 |Invasion of penile urethra                  |  4.73   |     0.21     |     1.66      |   0.0075    |     9.0e-02      |
 |Lymphovascular invasion                     |  3.01   |     0.33     |     1.15      |    0.027    |     2.2e-01      |
-|Perineural invasion                         |  6.67   |     0.15     |     2.44      |   0.00024   |     3.1e-03      |
+|Perineural invasion                         |  6.67   |     0.15     |     2.44      |   0.00024   |     3.4e-03      |
 |HPV infection                               |  1.07   |     0.93     |     0.35      |     0.91    |     9.1e-01      |
-|High pT stage (> pT1)                       |  21.62  |    0.046     |     2.70      |   2.1e-05   |     2.9e-04      |
+|High pT stage (> pT1)                       |  7.32   |     0.14     |     1.63      |   0.0013    |     1.7e-02      |
 |High pN stage (> pN0)                       |  3.16   |     0.32     |     0.97      |    0.042    |     2.9e-01      |
 |High clinical stage (> Stage II)            | 2.4e+09 |   4.2e-10    |     0.00      |   3.4e-07   |     5.4e-06      |
 |Prophylactic inguinal lymph node dissection |  2.84   |     0.35     |     0.74      |     0.13    |     6.0e-01      |
 |Metastatic inguinal lymph nodes             |  3.16   |     0.32     |     0.97      |    0.042    |     2.9e-01      |
-|High p27 levels                             |  1.46   |     0.68     |     0.50      |     0.48    |     9.1e-01      |
+|High p27 levels                             |  0.68   |     1.46     |     0.24      |     0.48    |     9.1e-01      |
 
 ***
 
@@ -334,17 +334,17 @@ In this subsection we evaluate the usefulness of clinicopathologic features and 
 |Glans location                              |  0.75   |     1.33     |     0.29      |     0.56    |     8.1e-01      |
 |Invasion limited to lamina propria          | 4.2e-08 |     1.15     |     2.51      |     0.48    |     8.1e-01      |
 |High grade tumor (grade 3)                  |  3.40   |     0.29     |     1.25      |    0.017    |     1.5e-01      |
-|Deep invasive tumor (> 10 mm)               |  7.67   |     0.13     |     2.77      |   9.8e-05   |     1.4e-03      |
+|Deep invasive tumor (> 10 mm)               |  7.67   |     0.13     |     2.77      |   9.8e-05   |     1.5e-03      |
 |Invasion of penile urethra                  |  2.81   |     0.36     |     0.89      |     0.11    |     6.6e-01      |
 |Lymphovascular invasion                     |  4.97   |     0.20     |     1.82      |   0.0013    |     1.4e-02      |
 |Perineural invasion                         |  4.71   |     0.21     |     1.76      |   0.0034    |     3.4e-02      |
 |HPV infection                               |  1.38   |     0.72     |     0.48      |     0.55    |     8.1e-01      |
-|High pT stage (> pT1)                       |  22.74  |    0.044     |     2.86      |   1.3e-05   |     1.9e-04      |
+|High pT stage (> pT1)                       |  7.72   |     0.13     |     1.73      |   0.00089   |     9.8e-03      |
 |High pN stage (> pN0)                       |  8.35   |     0.12     |     1.85      |   0.00066   |     7.8e-03      |
 |High clinical stage (> Stage II)            | 2.5e+09 |    4e-10     |     0.00      |   1.8e-07   |     2.9e-06      |
 |Prophylactic inguinal lymph node dissection |  3.70   |     0.27     |     1.02      |    0.044    |     3.5e-01      |
 |Metastatic inguinal lymph nodes             |  8.35   |     0.12     |     1.85      |   0.00066   |     7.8e-03      |
-|High p27 levels                             |  1.13   |     0.88     |     0.41      |     0.81    |     8.1e-01      |
+|High p27 levels                             |  0.88   |     1.13     |     0.32      |     0.81    |     8.1e-01      |
 
 ***
 
@@ -362,12 +362,12 @@ In this subsection we evaluate the usefulness of clinicopathologic features and 
 |Lymphovascular invasion                     |  2.27   |     0.44     |     0.89      |    0.093    |      0.780       |
 |Perineural invasion                         |  5.34   |     0.19     |     1.97      |   0.0015    |      0.022       |
 |HPV infection                               |  1.05   |     0.95     |     0.35      |     0.93    |      0.930       |
-|High pT stage (> pT1)                       |  4.43   |     0.23     |     1.43      |   0.0044    |      0.053       |
+|High pT stage (> pT1)                       |  3.50   |     0.29     |     1.21      |    0.013    |      0.143       |
 |High pN stage (> pN0)                       |  1.28   |     0.78     |     0.38      |     0.69    |      0.930       |
 |High clinical stage (> Stage II)            |  6.29   |     0.16     |     1.78      |   0.00085   |      0.013       |
 |Prophylactic inguinal lymph node dissection |  2.29   |     0.44     |     0.55      |     0.26    |      0.930       |
 |Metastatic inguinal lymph nodes             |  1.28   |     0.78     |     0.38      |     0.69    |      0.930       |
-|High p27 levels                             |  1.17   |     0.85     |     0.46      |     0.73    |      0.930       |
+|High p27 levels                             |  0.85   |     1.17     |     0.34      |     0.73    |      0.930       |
 
 ***
 
@@ -376,20 +376,20 @@ In this subsection we evaluate the usefulness of clinicopathologic features and 
 |Variables                                   |   HR    | Lower 95% CI | Higher 95% CI | Raw P value | Adjusted P value |
 |:-------------------------------------------|:-------:|:------------:|:-------------:|:-----------:|:----------------:|
 |Patient's age > median                      |  2.01   |     0.50     |     0.50      |     0.31    |      0.8550      |
-|Caucasian race                              | 3.4e+08 |    3e-09     |     0.00      |   0.0085    |      0.0880      |
+|Caucasian race                              | 3.4e+08 |    3e-09     |     0.00      |   0.0085    |      0.0960      |
 |Glans location                              |  0.69   |     1.46     |     0.18      |     0.57    |      0.9500      |
-|Invasion limited to lamina propria          | 5.7e-08 |     0.39     |     6.24      |    0.027    |      0.2430      |
+|Invasion limited to lamina propria          | 5.7e-08 |     0.39     |     6.24      |    0.027    |      0.2700      |
 |High grade tumor (grade 3)                  |  3.10   |     0.32     |     0.83      |    0.095    |      0.5400      |
 |Deep invasive tumor (> 10 mm)               |   9.96  |     0.10     |     2.28      |   0.0015    |      0.0210      |
-|Invasion of penile urethra                  |  6.30   |     0.16     |     1.65      |    0.013    |      0.1300      |
-|Lymphovascular invasion                     |  5.14   |     0.19     |     1.28      |    0.016    |      0.1440      |
+|Invasion of penile urethra                  |  6.30   |     0.16     |     1.65      |    0.013    |      0.1430      |
+|Lymphovascular invasion                     |  5.14   |     0.19     |     1.28      |    0.016    |      0.1600      |
 |Perineural invasion                         |  8.50   |     0.12     |     1.99      |   0.0028    |      0.0392      |
 |HPV infection                               |  1.05   |     0.95     |     0.22      |     0.95    |      0.9500      |
-|High pT stage (> pT1)                       |  8.98   |     0.11     |     1.11      |   0.0086    |      0.0880      |
+|High pT stage (> pT1)                       |  3.62   |     0.28     |     0.75      |    0.079    |      0.4740      |
 |High pN stage (> pN0)                       |  2.63   |     0.38     |     0.62      |     0.18    |      0.7200      |
 |High clinical stage (> Stage II)            | 1.8e+09 |   5.5e-10    |     0.00      |   0.00029   |      0.0046      |
 |Prophylactic inguinal lymph node dissection |  1.96   |     0.51     |     0.39      |     0.42    |      0.8550      |
 |Metastatic inguinal lymph nodes             |  2.63   |     0.38     |     0.62      |     0.18    |      0.7200      |
-|High p27 levels                             |  2.71   |     0.37     |     0.56      |     0.18    |      0.7200      |
+|High p27 levels                             |  0.37   |     2.71     |     0.076     |     0.18    |      0.7200      |
 
 ***

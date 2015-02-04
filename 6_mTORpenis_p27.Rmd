@@ -24,7 +24,7 @@ __Methodology:__ Immunohistochemical expression was categorized in 2 levels (low
 ```{r p27_Levels}
 marker.cut <- quantile(p27, probs = 0.66, na.rm = TRUE)
 marker <- ifelse(p27 > marker.cut, c("High p27"), c("Low p27"))
-marker <- as.factor(marker)
+marker <- factor(marker, levels = c("Low p27", "High p27"))
 ```
 ***
 

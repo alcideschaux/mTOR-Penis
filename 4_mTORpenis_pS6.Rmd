@@ -24,7 +24,7 @@ __Methodology:__ Immunohistochemical expression was categorized in 2 levels (low
 ```{r pS6_Levels}
 marker.cut <- quantile(pS6, probs = 0.66, na.rm = TRUE)
 marker <- ifelse(pS6 > marker.cut, c("High phos-S6"), c("Low phos-S6"))
-marker <- as.factor(marker)
+marker <- factor(marker, levels = c("Low phos-S6", "High phos-S6"))
 ```
 ***
 

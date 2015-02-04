@@ -24,7 +24,7 @@ __Methodology:__ Immunohistochemical expression was categorized in 2 levels (low
 ```{r AKT_Levels}
 marker.cut <- quantile(AKT, probs = 0.66, na.rm = TRUE)
 marker <- ifelse(AKT > marker.cut, c("High phos-AKT"), c("Low phos-AKT"))
-marker <- as.factor(marker)
+marker <- factor(marker, levels = c("Low phos-AKT", "High phos-AKT"))
 ```
 ***
 

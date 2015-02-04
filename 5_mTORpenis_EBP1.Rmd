@@ -24,7 +24,7 @@ __Methodology:__ Immunohistochemical expression was categorized in 2 levels (low
 ```{r 4EBP1_Levels}
 marker.cut <- quantile(EBP1, probs = 0.66, na.rm = TRUE)
 marker <- ifelse(EBP1 > marker.cut, c("High phos-4EBP1"), c("Low phos-4EBP1"))
-marker <- as.factor(marker)
+marker <- factor(marker, levels = c("Low phos-4EBP1", "High phos-4EBP1"))
 ```
 ***
 

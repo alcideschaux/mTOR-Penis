@@ -1,5 +1,5 @@
 ## mTOR in Penile Cancer: PTEN expression
-Last update: ``Thu Dec 18 14:27:45 2014``
+Last update: ``Wed Feb  4 14:35:23 2015``
 
 
 ```r
@@ -19,7 +19,7 @@ __Methodology:__ Immunohistochemical expression was categorized in 2 levels (dec
 
 #### Immunohistochemical expression by H-scores
 
-![plot of chunk PTEN_DescriptiveH](figure/PTEN_DescriptiveH1.png) ![plot of chunk PTEN_DescriptiveH](figure/PTEN_DescriptiveH2.png) 
+![plot of chunk PTEN_DescriptiveH](figure/PTEN_DescriptiveH-1.png) ![plot of chunk PTEN_DescriptiveH](figure/PTEN_DescriptiveH-2.png) 
 
 |Statistics          | Values |
 |:-------------------|:------:|
@@ -36,12 +36,12 @@ _Number of missing cases:_ 1 cases.
 
 #### Immunohistochemical expression by levels
 
-![plot of chunk PTEN_DescriptiveLevels](figure/PTEN_DescriptiveLevels.png) 
+![plot of chunk PTEN_DescriptiveLevels](figure/PTEN_DescriptiveLevels-1.png) 
 
 |                    | No. Cases | %  |
 |:-------------------|:---------:|:--:|
-|Decreased/Loss PTEN |    15     | 29 |
 |Maintained PTEN     |    37     | 71 |
+|Decreased/Loss PTEN |    15     | 29 |
 
 _Number of missing cases:_ 1 cases.
 
@@ -51,52 +51,52 @@ In this subsection we evaluate the association of levels of immunohistochemical 
 ***
 
 #### Tumor recurrence
-![plot of chunk PTEN_AssociationRecurrence](figure/PTEN_AssociationRecurrence.png) 
+![plot of chunk PTEN_AssociationRecurrence](figure/PTEN_AssociationRecurrence-1.png) 
 
-|                    |  No  |  %   | Yes |  %   |
-|:-------------------|:----:|:----:|:---:|:----:|
-|Decreased/Loss PTEN | 8.0  | 20.5 | 2.0 | 50.0 |
-|Maintained PTEN     | 31.0 | 79.5 | 2.0 | 50.0 |
+|                    | No |  %   | Yes | %  |
+|:-------------------|:--:|:----:|:---:|:--:|
+|Maintained PTEN     | 31 | 79.5 |  2  | 50 |
+|Decreased/Loss PTEN | 8  | 20.5 |  2  | 50 |
 
 ***
 
 #### Tumor progression
-![plot of chunk PTEN_AssociationProgression](figure/PTEN_AssociationProgression.png) 
+![plot of chunk PTEN_AssociationProgression](figure/PTEN_AssociationProgression-1.png) 
 
-|                    |  No  |  %   | Yes  |  %   |
-|:-------------------|:----:|:----:|:----:|:----:|
-|Decreased/Loss PTEN | 8.0  | 28.6 | 4.0  | 22.2 |
-|Maintained PTEN     | 20.0 | 71.4 | 14.0 | 77.8 |
+|                    | No |  %   | Yes |  %   |
+|:-------------------|:--:|:----:|:---:|:----:|
+|Maintained PTEN     | 20 | 71.4 | 14  | 77.8 |
+|Decreased/Loss PTEN | 8  | 28.6 |  4  | 22.2 |
 
 ***
 
 #### Distant metastasis
-![plot of chunk PTEN_AssociationDistantMetastasis](figure/PTEN_AssociationDistantMetastasis.png) 
+![plot of chunk PTEN_AssociationDistantMetastasis](figure/PTEN_AssociationDistantMetastasis-1.png) 
 
-|                    |  No  |  %   | Yes  |  %   |
-|:-------------------|:----:|:----:|:----:|:----:|
-|Decreased/Loss PTEN | 9.0  | 36.0 | 3.0  | 15.8 |
-|Maintained PTEN     | 16.0 | 64.0 | 16.0 | 84.2 |
+|                    | No | %  | Yes |  %   |
+|:-------------------|:--:|:--:|:---:|:----:|
+|Maintained PTEN     | 16 | 64 | 16  | 84.2 |
+|Decreased/Loss PTEN | 9  | 36 |  3  | 15.8 |
 
 ***
 
 #### Overall mortality
-![plot of chunk PTEN_AssociationOverallMortality](figure/PTEN_AssociationOverallMortality.png) 
+![plot of chunk PTEN_AssociationOverallMortality](figure/PTEN_AssociationOverallMortality-1.png) 
 
-|                    |  No  |  %   | Yes  |  %   |
-|:-------------------|:----:|:----:|:----:|:----:|
-|Decreased/Loss PTEN | 6.0  | 22.2 | 8.0  | 34.8 |
-|Maintained PTEN     | 21.0 | 77.8 | 15.0 | 65.2 |
+|                    | No |  %   | Yes |  %   |
+|:-------------------|:--:|:----:|:---:|:----:|
+|Maintained PTEN     | 21 | 77.8 | 15  | 65.2 |
+|Decreased/Loss PTEN | 6  | 22.2 |  8  | 34.8 |
 
 ***
 
 #### Cancer-related mortality
-![plot of chunk PTEN_AssociationCancerMortality](figure/PTEN_AssociationCancerMortality.png) 
+![plot of chunk PTEN_AssociationCancerMortality](figure/PTEN_AssociationCancerMortality-1.png) 
 
-|                    |  No  |  %   | Yes |  %   |
-|:-------------------|:----:|:----:|:---:|:----:|
-|Decreased/Loss PTEN | 12.0 | 30.0 | 1.0 | 11.1 |
-|Maintained PTEN     | 28.0 | 70.0 | 8.0 | 88.9 |
+|                    | No | %  | Yes |  %   |
+|:-------------------|:--:|:--:|:---:|:----:|
+|Maintained PTEN     | 28 | 70 |  8  | 88.9 |
+|Decreased/Loss PTEN | 12 | 30 |  1  | 11.1 |
 
 ***
 
@@ -105,48 +105,48 @@ In this subsection we plot survival curves for levels of immunohistochemical exp
 
 ***
 
-![plot of chunk PTEN_SurvivalRecurrence](figure/PTEN_SurvivalRecurrence.png) 
+![plot of chunk PTEN_SurvivalRecurrence](figure/PTEN_SurvivalRecurrence-1.png) 
 
 |                    | No. Observations | No. Events | Median Survival |
 |:-------------------|:----------------:|:----------:|:---------------:|
-|Decreased/Loss PTEN |       2.0        |    2.0     |      27.7       |
-|Maintained PTEN     |       2.0        |    2.0     |      13.3       |
+|Maintained PTEN     |        2         |     2      |      13.3       |
+|Decreased/Loss PTEN |        2         |     2      |      27.7       |
 
 ***
 
-![plot of chunk PTEN_SurvivalProgression](figure/PTEN_SurvivalProgression.png) 
+![plot of chunk PTEN_SurvivalProgression](figure/PTEN_SurvivalProgression-1.png) 
 
 |                    | No. Observations | No. Events | Median Survival |
 |:-------------------|:----------------:|:----------:|:---------------:|
-|Decreased/Loss PTEN |       2.00       |    2.00    |      10.95      |
-|Maintained PTEN     |      12.00       |   12.00    |      6.05       |
+|Maintained PTEN     |        12        |     12     |      6.05       |
+|Decreased/Loss PTEN |        2         |     2      |      10.95      |
 
 ***
 
-![plot of chunk PTEN_SurvivalDistantMetastasis](figure/PTEN_SurvivalDistantMetastasis.png) 
+![plot of chunk PTEN_SurvivalDistantMetastasis](figure/PTEN_SurvivalDistantMetastasis-1.png) 
 
 |                    | No. Observations | No. Events | Median Survival |
 |:-------------------|:----------------:|:----------:|:---------------:|
-|Decreased/Loss PTEN |       1.00       |    1.00    |      19.40      |
-|Maintained PTEN     |       8.00       |    8.00    |      8.95       |
+|Maintained PTEN     |        8         |     8      |      8.95       |
+|Decreased/Loss PTEN |        1         |     1      |      19.40      |
 
 ***
 
-![plot of chunk PTEN_SurvivalOverallMortality](figure/PTEN_SurvivalOverallMortality.png) 
+![plot of chunk PTEN_SurvivalOverallMortality](figure/PTEN_SurvivalOverallMortality-1.png) 
 
 |                    | No. Observations | No. Events | Median Survival |
 |:-------------------|:----------------:|:----------:|:---------------:|
-|Decreased/Loss PTEN |       14.0       |    8.0     |      117.4      |
-|Maintained PTEN     |       36.0       |    15.0    |      29.2       |
+|Maintained PTEN     |        36        |     15     |      29.2       |
+|Decreased/Loss PTEN |        14        |     8      |      117.4      |
 
 ***
 
-![plot of chunk PTEN_SurvivalCancerMortality](figure/PTEN_SurvivalCancerMortality.png) 
+![plot of chunk PTEN_SurvivalCancerMortality](figure/PTEN_SurvivalCancerMortality-1.png) 
 
 |                    | No. Observations | No. Events | Median Survival |
 |:-------------------|:----------------:|:----------:|:---------------:|
-|Decreased/Loss PTEN |        13        |     1      |       NA        |
 |Maintained PTEN     |        36        |     8      |       NA        |
+|Decreased/Loss PTEN |        13        |     1      |       NA        |
 
 ***
 
@@ -176,7 +176,7 @@ In this subsection we evaluate the usefulness of clinicopathologic features and 
 |High clinical stage (> Stage II)            |  0.48   |    0.053     |     4.38      |     0.49    |       1.00       |
 |Prophylactic inguinal lymph node dissection | 1.2e+08 |     0.00     |      NA       |        1    |       1.00       |
 |Metastatic inguinal lymph nodes             |  0.75   |    0.027     |     20.72     |     0.85    |       1.00       |
-|PTEN expression decreased/lost              |  0.26   |    0.027     |     2.42      |     0.21    |       1.00       |
+|PTEN expression decreased/lost              |  3.87   |     0.41     |     36.70     |     0.21    |       1.00       |
 
 ***
 
@@ -194,12 +194,12 @@ In this subsection we evaluate the usefulness of clinicopathologic features and 
 |Lymphovascular invasion                     |  4.79   |     1.36     |     18.54     |    0.018    |      0.1620      |
 |Perineural invasion                         |  6.00   |     1.64     |     24.74     |   0.0087    |      0.0957      |
 |HPV infection                               |  1.79   |     0.37     |     8.66      |     0.46    |      0.9900      |
-|High pT stage (> pT1)                       |  18.21  |     3.10     |    350.21     |    0.008    |      0.0930      |
+|High pT stage (> pT1)                       |  7.47   |     1.71     |     52.86     |    0.016    |      0.1550      |
 |High pN stage (> pN0)                       |  7.00   |     1.31     |     47.55     |    0.031    |      0.2700      |
 |High clinical stage (> Stage II)            |  4e+08  |   1.5e-69    |      NA       |     0.99    |      0.9900      |
 |Prophylactic inguinal lymph node dissection |  0.83   |     0.13     |     5.30      |     0.84    |      0.9900      |
 |Metastatic inguinal lymph nodes             |  7.00   |     1.31     |     47.55     |    0.031    |      0.2700      |
-|PTEN expression decreased/lost              |  1.40   |     0.36     |     6.09      |     0.63    |      0.9900      |
+|PTEN expression decreased/lost              |  0.71   |     0.16     |     2.75      |     0.63    |      0.9900      |
 
 ***
 
@@ -212,17 +212,17 @@ In this subsection we evaluate the usefulness of clinicopathologic features and 
 |Glans location                              |  0.53   |     0.16     |     1.75      |      0.3    |      1.000       |
 |Invasion limited to lamina propria          | 1.2e-07 |      NA      |    2e+205     |     0.99    |      1.000       |
 |High grade tumor (grade 3)                  |  3.70   |     1.06     |     14.11     |    0.045    |      0.504       |
-|Deep invasive tumor (> 10 mm)               |  7.56   |     1.99     |     34.27     |   0.0047    |      0.066       |
+|Deep invasive tumor (> 10 mm)               |  7.56   |     1.99     |     34.27     |   0.0047    |      0.071       |
 |Invasion of penile urethra                  |  3.54   |     0.80     |     19.08     |     0.11    |      0.900       |
 |Lymphovascular invasion                     |  11.92  |     3.06     |     56.65     |   0.00074   |      0.012       |
 |Perineural invasion                         |  2.42   |     0.68     |     9.18      |     0.18    |      1.000       |
 |HPV infection                               |  2.74   |     0.58     |     15.08     |     0.21    |      1.000       |
-|High pT stage (> pT1)                       |  21.00  |     3.52     |    406.43     |   0.0057    |      0.080       |
+|High pT stage (> pT1)                       |  8.50   |     1.91     |     60.80     |    0.011    |      0.154       |
 |High pN stage (> pN0)                       | 3.8e+09 |   2.2e-147   |      NA       |        1    |      1.000       |
 |High clinical stage (> Stage II)            |  5e+08  |   9.9e-75    |      NA       |     0.99    |      1.000       |
 |Prophylactic inguinal lymph node dissection |  1.14   |     0.18     |     7.88      |     0.89    |      1.000       |
 |Metastatic inguinal lymph nodes             | 3.8e+09 |   2.2e-147   |      NA       |        1    |      1.000       |
-|PTEN expression decreased/lost              |  3.00   |     0.74     |     15.45     |     0.15    |      1.000       |
+|PTEN expression decreased/lost              |  0.33   |    0.065     |     1.35      |     0.15    |      1.000       |
 
 ***
 
@@ -245,7 +245,7 @@ In this subsection we evaluate the usefulness of clinicopathologic features and 
 |High clinical stage (> Stage II)            |  0.98   |     0.31     |     3.09      |     0.97    |       1.00       |
 |Prophylactic inguinal lymph node dissection |  0.80   |     0.13     |     4.58      |      0.8    |       1.00       |
 |Metastatic inguinal lymph nodes             |  0.64   |     0.14     |     2.93      |     0.57    |       1.00       |
-|PTEN expression decreased/lost              |  0.54   |     0.15     |     1.85      |     0.33    |       1.00       |
+|PTEN expression decreased/lost              |  1.87   |     0.54     |     6.77      |     0.33    |       1.00       |
 
 ***
 
@@ -263,12 +263,12 @@ In this subsection we evaluate the usefulness of clinicopathologic features and 
 |Lymphovascular invasion                     |  7.11   |     1.56     |     39.44     |    0.014    |       0.20       |
 |Perineural invasion                         |  5.45   |     1.22     |     29.60     |    0.032    |       0.42       |
 |HPV infection                               |  1.67   |     0.21     |     9.18      |     0.58    |       1.00       |
-|High pT stage (> pT1)                       |  6.91   |     1.12     |    134.24     |    0.081    |       0.73       |
+|High pT stage (> pT1)                       |  2.74   |     0.58     |     19.91     |     0.24    |       1.00       |
 |High pN stage (> pN0)                       |  2.86   |     0.55     |     17.52     |     0.22    |       1.00       |
 |High clinical stage (> Stage II)            | 1.3e+08 |   3.5e-81    |      NA       |     0.99    |       1.00       |
 |Prophylactic inguinal lymph node dissection |  1.00   |     0.14     |     7.16      |        1    |       1.00       |
 |Metastatic inguinal lymph nodes             |  2.86   |     0.55     |     17.52     |     0.22    |       1.00       |
-|PTEN expression decreased/lost              |  3.43   |     0.54     |     67.23     |     0.27    |       1.00       |
+|PTEN expression decreased/lost              |  0.29   |    0.015     |     1.86      |     0.27    |       1.00       |
 
 ***
 
@@ -291,12 +291,12 @@ In this subsection we evaluate the usefulness of clinicopathologic features and 
 |Lymphovascular invasion                     |  7.19   |     0.14     |     0.60      |     0.11    |       0.97       |
 |Perineural invasion                         |  3.78   |     0.26     |     0.31      |     0.34    |       0.97       |
 |HPV infection                               |  7.88   |     0.13     |     0.68      |    0.088    |       0.88       |
-|High pT stage (> pT1)                       |  4.48   |     0.22     |     0.32      |     0.25    |       0.97       |
+|High pT stage (> pT1)                       |  2.93   |     0.34     |     0.24      |     0.38    |       0.97       |
 |High pN stage (> pN0)                       |  1.21   |     0.83     |     0.073     |      0.9    |       0.97       |
 |High clinical stage (> Stage II)            |  4.48   |     0.22     |     0.32      |     0.25    |       0.97       |
 |Prophylactic inguinal lymph node dissection | 2.9e+09 |   3.5e-10    |     0.00      |     0.17    |       0.97       |
 |Metastatic inguinal lymph nodes             |  1.21   |     0.83     |     0.073     |      0.9    |       0.97       |
-|PTEN expression decreased/lost              |  1.67   |     0.60     |     0.14      |     0.68    |       0.97       |
+|PTEN expression decreased/lost              |  0.60   |     1.67     |     0.052     |     0.68    |       0.97       |
 
 ***
 
@@ -312,14 +312,14 @@ In this subsection we evaluate the usefulness of clinicopathologic features and 
 |Deep invasive tumor (> 10 mm)               |  11.92  |    0.084     |     4.00      |   2.5e-06   |     3.8e-05      |
 |Invasion of penile urethra                  |  4.73   |     0.21     |     1.66      |   0.0075    |     9.0e-02      |
 |Lymphovascular invasion                     |  3.01   |     0.33     |     1.15      |    0.027    |     1.9e-01      |
-|Perineural invasion                         |  6.67   |     0.15     |     2.44      |   0.00024   |     3.1e-03      |
+|Perineural invasion                         |  6.67   |     0.15     |     2.44      |   0.00024   |     3.4e-03      |
 |HPV infection                               |  1.07   |     0.93     |     0.35      |     0.91    |     9.1e-01      |
-|High pT stage (> pT1)                       |  21.62  |    0.046     |     2.70      |   2.1e-05   |     2.9e-04      |
+|High pT stage (> pT1)                       |  7.32   |     0.14     |     1.63      |   0.0013    |     1.7e-02      |
 |High pN stage (> pN0)                       |  3.16   |     0.32     |     0.97      |    0.042    |     2.5e-01      |
 |High clinical stage (> Stage II)            | 2.4e+09 |   4.2e-10    |     0.00      |   3.4e-07   |     5.4e-06      |
 |Prophylactic inguinal lymph node dissection |  2.84   |     0.35     |     0.74      |     0.13    |     4.8e-01      |
 |Metastatic inguinal lymph nodes             |  3.16   |     0.32     |     0.97      |    0.042    |     2.5e-01      |
-|PTEN expression decreased/lost              |  2.98   |     0.34     |     0.84      |    0.062    |     3.1e-01      |
+|PTEN expression decreased/lost              |  0.34   |     2.98     |     0.095     |    0.062    |     3.1e-01      |
 
 ***
 
@@ -332,17 +332,17 @@ In this subsection we evaluate the usefulness of clinicopathologic features and 
 |Glans location                              |  0.75   |     1.33     |     0.29      |     0.56    |     5.6e-01      |
 |Invasion limited to lamina propria          | 4.2e-08 |     1.15     |     2.51      |     0.48    |     5.6e-01      |
 |High grade tumor (grade 3)                  |  3.40   |     0.29     |     1.25      |    0.017    |     1.4e-01      |
-|Deep invasive tumor (> 10 mm)               |  7.67   |     0.13     |     2.77      |   9.8e-05   |     1.4e-03      |
+|Deep invasive tumor (> 10 mm)               |  7.67   |     0.13     |     2.77      |   9.8e-05   |     1.5e-03      |
 |Invasion of penile urethra                  |  2.81   |     0.36     |     0.89      |     0.11    |     5.5e-01      |
 |Lymphovascular invasion                     |  4.97   |     0.20     |     1.82      |   0.0013    |     1.4e-02      |
 |Perineural invasion                         |  4.71   |     0.21     |     1.76      |   0.0034    |     3.4e-02      |
 |HPV infection                               |  1.38   |     0.72     |     0.48      |     0.55    |     5.6e-01      |
-|High pT stage (> pT1)                       |  22.74  |    0.044     |     2.86      |   1.3e-05   |     1.9e-04      |
+|High pT stage (> pT1)                       |  7.72   |     0.13     |     1.73      |   0.00089   |     9.8e-03      |
 |High pN stage (> pN0)                       |  8.35   |     0.12     |     1.85      |   0.00066   |     7.8e-03      |
 |High clinical stage (> Stage II)            | 2.5e+09 |    4e-10     |     0.00      |   1.8e-07   |     2.9e-06      |
 |Prophylactic inguinal lymph node dissection |  3.70   |     0.27     |     1.02      |    0.044    |     3.1e-01      |
 |Metastatic inguinal lymph nodes             |  8.35   |     0.12     |     1.85      |   0.00066   |     7.8e-03      |
-|PTEN expression decreased/lost              |  5.10   |     0.20     |     1.15      |     0.01    |     8.0e-02      |
+|PTEN expression decreased/lost              |  0.20   |     5.10     |     0.044     |     0.01    |     8.0e-02      |
 
 ***
 
@@ -360,12 +360,12 @@ In this subsection we evaluate the usefulness of clinicopathologic features and 
 |Lymphovascular invasion                     |  2.27   |     0.44     |     0.89      |    0.093    |      0.693       |
 |Perineural invasion                         |  5.34   |     0.19     |     1.97      |   0.0015    |      0.022       |
 |HPV infection                               |  1.05   |     0.95     |     0.35      |     0.93    |      0.930       |
-|High pT stage (> pT1)                       |  4.43   |     0.23     |     1.43      |   0.0044    |      0.053       |
+|High pT stage (> pT1)                       |  3.50   |     0.29     |     1.21      |    0.013    |      0.143       |
 |High pN stage (> pN0)                       |  1.28   |     0.78     |     0.38      |     0.69    |      0.930       |
 |High clinical stage (> Stage II)            |  6.29   |     0.16     |     1.78      |   0.00085   |      0.013       |
 |Prophylactic inguinal lymph node dissection |  2.29   |     0.44     |     0.55      |     0.26    |      0.930       |
 |Metastatic inguinal lymph nodes             |  1.28   |     0.78     |     0.38      |     0.69    |      0.930       |
-|PTEN expression decreased/lost              |  2.39   |     0.42     |     0.84      |    0.085    |      0.680       |
+|PTEN expression decreased/lost              |  0.42   |     2.39     |     0.15      |    0.085    |      0.680       |
 
 ***
 
@@ -374,20 +374,20 @@ In this subsection we evaluate the usefulness of clinicopathologic features and 
 |Variables                                   |   HR    | Lower 95% CI | Higher 95% CI | Raw P value | Adjusted P value |
 |:-------------------------------------------|:-------:|:------------:|:-------------:|:-----------:|:----------------:|
 |Patient's age > median                      |  2.01   |     0.50     |     0.50      |     0.31    |      0.8550      |
-|Caucasian race                              | 3.4e+08 |    3e-09     |     0.00      |   0.0085    |      0.0880      |
+|Caucasian race                              | 3.4e+08 |    3e-09     |     0.00      |   0.0085    |      0.0960      |
 |Glans location                              |  0.69   |     1.46     |     0.18      |     0.57    |      0.9500      |
-|Invasion limited to lamina propria          | 5.7e-08 |     0.39     |     6.24      |    0.027    |      0.2430      |
+|Invasion limited to lamina propria          | 5.7e-08 |     0.39     |     6.24      |    0.027    |      0.2500      |
 |High grade tumor (grade 3)                  |  3.10   |     0.32     |     0.83      |    0.095    |      0.5400      |
 |Deep invasive tumor (> 10 mm)               |   9.96  |     0.10     |     2.28      |   0.0015    |      0.0210      |
-|Invasion of penile urethra                  |  6.30   |     0.16     |     1.65      |    0.013    |      0.1300      |
-|Lymphovascular invasion                     |  5.14   |     0.19     |     1.28      |    0.016    |      0.1440      |
+|Invasion of penile urethra                  |  6.30   |     0.16     |     1.65      |    0.013    |      0.1430      |
+|Lymphovascular invasion                     |  5.14   |     0.19     |     1.28      |    0.016    |      0.1600      |
 |Perineural invasion                         |  8.50   |     0.12     |     1.99      |   0.0028    |      0.0392      |
 |HPV infection                               |  1.05   |     0.95     |     0.22      |     0.95    |      0.9500      |
-|High pT stage (> pT1)                       |  8.98   |     0.11     |     1.11      |   0.0086    |      0.0880      |
+|High pT stage (> pT1)                       |  3.62   |     0.28     |     0.75      |    0.079    |      0.4740      |
 |High pN stage (> pN0)                       |  2.63   |     0.38     |     0.62      |     0.18    |      0.7200      |
 |High clinical stage (> Stage II)            | 1.8e+09 |   5.5e-10    |     0.00      |   0.00029   |      0.0046      |
 |Prophylactic inguinal lymph node dissection |  1.96   |     0.51     |     0.39      |     0.42    |      0.8550      |
 |Metastatic inguinal lymph nodes             |  2.63   |     0.38     |     0.62      |     0.18    |      0.7200      |
-|PTEN expression decreased/lost              |  4.33   |     0.23     |     0.53      |      0.1    |      0.5400      |
+|PTEN expression decreased/lost              |  0.23   |     4.33     |     0.028     |      0.1    |      0.5400      |
 
 ***
